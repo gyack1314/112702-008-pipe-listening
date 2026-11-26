@@ -19,7 +19,7 @@ class LoopbackHandler(socketserver.StreamRequestHandler):
 
 class LocalLinkTests(unittest.TestCase):
     def test_published_scene(self):
-        events = load_scene(Path(__file__).with_name('field-session.jsonl'))
+        events = load_scene(Path(__file__).resolve().parents[1] / 'field-session.jsonl')
         self.assertGreater(len(events), 10)
         disconnected = next(e for e in events if e['kind'] == 'disconnect')
         actor = disconnected['actor']

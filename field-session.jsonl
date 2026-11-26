@@ -1,5 +1,6 @@
 {"at":0,"actor":"desk","kind":"network","body":{"segments":{"ab":["A","B",80],"bc":["B","C",45],"bd":["B","D",55]},"devices":{"a":{"node":"A","budget_s":6,"profiles":["low","wide"]},"c":{"node":"C","budget_s":5,"profiles":["low","wide"]},"d":{"node":"D","budget_s":4,"profiles":["low"]}},"profiles":{"low":{"bands":["lo"],"seconds":2},"wide":{"bands":["lo","hi"],"seconds":3}}}}
 {"at":1,"actor":"weather","kind":"conditions","body":{"window":"W1","temperature_c":[12,14],"pressure_kpa":[200,230],"speed_m_s":[650,890],"valid":[0,12],"rev":1}}
+{"at":1,"actor":"weather","kind":"conditions","body":{"window":"W2","temperature_c":[12,14],"pressure_kpa":[200,230],"speed_m_s":[650,890],"valid":[10,16],"rev":1}}
 {"at":2,"actor":"pump","kind":"run","body":{"record":"drive3","valid":[2,10],"affected_bands":["lo"]}}
 {"at":3,"actor":"a","kind":"signal","body":{"clip":"a3","window":"W1","arrival_ms":[138,149],"bands":{"lo":0.9,"hi":0.5},"contact":true}}
 {"at":4,"actor":"c","kind":"signal","body":{"clip":"c2","window":"W1","arrival_ms":[78,91],"bands":{"lo":0.8,"hi":0.7},"contact":true}}
